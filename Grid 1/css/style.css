@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template: 100px 1fr 150px / 200px 1fr;
+    grid-gap: 10px;
+    height: 100vh;
+    grid-template-areas: "header header"
+                         "left contenido"
+                         "footer footer";
+}
+
+.header{
+    grid-area: header;
+    border-radius: 10px;
+}
+
+.left{
+    grid-area: left;
+    border-radius: 10px;
+
+}
+
+.contenido{
+    grid-area: contenido;
+    border-radius: 10px;
+}
+
+.footer{
+    grid-area: footer;
+    border-radius: 10px;
+}
+
+.item{
+    background-color: rgb(240, 240, 240);;
+    padding: 10px;
+    border: 1px solid rgb(117, 117, 117);
+}
+
+.item:nth-of-type(4) {
+    background: blue;
+    overflow: auto;
+
+  }
+
